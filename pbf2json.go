@@ -36,7 +36,7 @@ func getSettings() settings {
 	leveldbPath := flag.String("leveldb", "/tmp", "path to leveldb directory")
 	tagList := flag.String("tags", "", "comma-separated list of valid tags, group AND conditions with a +")
 	batchSize := flag.Int("batch", 50000, "batch leveldb writes in batches of this size")
-	wayNodes := flag.Bool("waynodes", false, "should the lat/lons of nodes belonging to ways be printed")
+	wayNodes := flag.Bool("waynodes", true, "should the lat/lons of nodes belonging to ways be printed")
 
 	flag.Parse()
 	args := flag.Args()
